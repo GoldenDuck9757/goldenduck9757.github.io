@@ -1,126 +1,202 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golden4484</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: white;
-        }
-        header {
-            background-color: #003366; /* Azul escuro */
-            padding: 20px;
-            text-align: center;
-            position: relative;
-        }
-        header::after {
-            content: '';
-            display: block;
-            height: 5px;
-            background-color: white;
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            right: 0;
-            border-radius: 2px;
-        }
-        .name {
-            font-size: 40px;
-            animation: changeFont 3s infinite;
-        }
-        @keyframes changeFont {
-            0% { font-family: 'Arial', sans-serif; }
-            25% { font-family: 'Courier New', monospace; }
-            50% { font-family: 'Georgia', serif; }
-            75% { font-family: 'Times New Roman', serif; }
-            100% { font-family: 'Arial', sans-serif; }
-        }
-        .container {
-            padding: 20px;
-        }
-        .box {
-            background-color: #555;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 20px 0;
-            border: 1px solid #333;
-        }
-        h2 {
-            font-size: 24px;
-            border-bottom: 2px solid white;
-            padding-bottom: 10px;
-            margin-bottom: 10px;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .project {
-            margin-bottom: 20px;
-            border-top: 1px solid white;
-            padding-top: 10px;
-        }
-        .project:first-of-type {
-            border-top: none;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Golden4484</title>
+  <style>
+    /* Reset e base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #111;
+      color: white;
+      line-height: 1.6;
+    }
+
+    /* Seção inicial com o nome */
+    .header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 60px 0;
+      position: relative;
+    }
+
+    .header h1 {
+      font-size: 3em;
+      display: inline-block;
+      font-family: 'Courier New', Courier, monospace;
+      color: white;
+      animation: changeFont 2s infinite alternate;
+    }
+
+    .header h1 span {
+      display: inline-block;
+      animation: changeColor 2s infinite alternate;
+    }
+
+    @keyframes changeFont {
+      0% {
+        font-family: 'Courier New', Courier, monospace;
+      }
+      100% {
+        font-family: 'Verdana', sans-serif;
+      }
+    }
+
+    @keyframes changeColor {
+      0% {
+        color: #FF6347;
+      }
+      100% {
+        color: #00BFFF;
+      }
+    }
+
+    /* Linha de separação */
+    .divider {
+      border-top: 3px solid white;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Seção preto */
+    .section {
+      background-color: #222;
+      padding: 30px;
+      margin-top: 20px;
+    }
+
+    /* Títulos das seções */
+    h2 {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 15px;
+      border-bottom: 3px solid white;
+      padding-bottom: 10px;
+      color: #FFF;
+    }
+
+    /* Quadrado cinza */
+    .box {
+      background-color: #555;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .box p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    /* Títulos em cada box */
+    .box h3 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .projects .project {
+      margin-bottom: 15px;
+      padding: 10px;
+      border-bottom: 2px solid #fff;
+    }
+
+    .projects .project:last-child {
+      border-bottom: none;
+    }
+
+    /* Animação de rotação */
+    .rotate {
+      display: inline-block;
+      animation: rotateText 4s infinite linear;
+    }
+
+    @keyframes rotateText {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Espacinho entre seções */
+    .spacer {
+      height: 30px;
+    }
+
+  </style>
 </head>
 <body>
+  <!-- Seção Inicial -->
+  <div class="header">
+    <h1><span class="rotate">G</span><span>o</span><span>l</span><span>d</span><span>e</span><span>n</span><span>4</span><span>4</span><span>8</span><span>4</span></h1>
+    <div class="divider"></div>
+  </div>
 
-<header>
-    <div class="name">Golden4484</div>
-</header>
-
-<div class="container">
+  <!-- Seção Sobre Mim -->
+  <div class="section">
     <div class="box">
-        <h2>Sobre Mim</h2>
-        <p>Olá, sou Golden4484. Desenvolvedor com experiência em Python, Java, HTML e crio e desenvolvo Inteligências Artificiais. Meus pronomes são ele/dele. Gosto de programar coisas bem malucas e até mesmo sem nexo, ou por pura curiosidade ou por diversão...</p>
+      <h3>Sobre Mim</h3>
+      <p>Olá, sou Golden4484. Desenvolvedor com experiência em Python, Java, HTML e crio e desenvolvo Inteligências Artificiais. Meus pronomes são ele/dele. Gosto de programar coisas bem malucas e até mesmo sem nexo, ou por pura curiosidade ou por diversão...</p>
     </div>
+  </div>
 
+  <div class="spacer"></div>
+
+  <!-- Seção Tecnologias e Especialidades -->
+  <div class="section">
     <div class="box">
-        <h2>Tecnologias e Especialidades</h2>
-        <p>Python: Criação de scripts, automação de tarefas e desenvolvimento de IAs.</p>
-        <p>Java: Desenvolvimento de aplicações robustas e escaláveis.</p>
-        <p>HTML: Construção de interfaces web intuitivas e acessíveis.</p>
-        <p>IA: Implementação de modelos de aprendizado de máquina e redes neurais com o uso da API do Google generative AI (IA studio).</p>
+      <h3>Tecnologias e Especialidades</h3>
+      <p><strong>Python:</strong> Criação de scripts, automação de tarefas e desenvolvimento de IAs.</p>
+      <p><strong>Java:</strong> Desenvolvimento de aplicações robustas e escaláveis.</p>
+      <p><strong>HTML:</strong> Construção de interfaces web intuitivas e acessíveis.</p>
+      <p><strong>IA:</strong> Implementação de modelos de aprendizado de máquina e redes neurais com o uso da API do Google Generative AI (IA Studio)</p>
     </div>
+  </div>
 
+  <div class="spacer"></div>
+
+  <!-- Seção Projetos em Destaque -->
+  <div class="section projects">
     <div class="box">
-        <h2>Projetos em Destaque</h2>
-        <div class="project">
-            <strong>1. Tamagotchi com Pygame</strong>
-            <p>Descrição: Um jogo inspirado no Tamagotchi, desenvolvido com Pygame, onde você cuida de uma criatura virtual. Este projeto explora diferentes mecânicas de interação e gerenciamento de estados, interação com o uso de IA.</p>
-            <p>Tecnologias: Python, Pygame, Google Generative AI</p>
-        </div>
-        <div class="project">
-            <strong>2. Bot de Discord com Memória Avançada</strong>
-            <p>Descrição: Um bot de Discord capaz de manter o contexto de conversas por longos períodos, respondendo de forma inteligente e natural. Ele utiliza o Google Generative AI para garantir respostas precisas e adaptadas ao contexto.</p>
-            <p>Tecnologias: Python, Google Generative AI</p>
-        </div>
-        <div class="project">
-            <strong>3. Interface de Conversa com IA</strong>
-            <p>Descrição: Desenvolvi uma interface em Python utilizando PyQt5, que permiteao usuário interagir de maneira natural com uma IA. A interface pode executar comandos no terminal, manipular arquivos, e ainda salva o histórico das conversas para consultas futuras.</p>
-            <p>Tecnologias: Python, PyQt5</p>
-        </div>
+      <h3>Projetos em Destaque</h3>
+      <div class="project">
+        <h4>Tamagotchi com Pygame</h4>
+        <p><strong>Descrição:</strong> Um jogo inspirado no Tamagotchi, desenvolvido com Pygame, onde você cuida de uma criatura virtual. Este projeto explora diferentes mecânicas de interação e gerenciamento de estados, interação com o uso de IA.</p>
+        <p><strong>Tecnologias:</strong> Python, Pygame, Google Generative AI</p>
+      </div>
+      <div class="project">
+        <h4>Bot de Discord com Memória Avançada</h4>
+        <p><strong>Descrição:</strong> Um bot de Discord capaz de manter o contexto de conversas por longos períodos, respondendo de forma inteligente e natural. Ele utiliza o Google Generative AI para garantir respostas precisas e adaptadas ao contexto.</p>
+        <p><strong>Tecnologias:</strong> Python, Google Generative AI</p>
+      </div>
+      <div class="project">
+        <h4>Interface de Conversa com IA</h4>
+        <p><strong>Descrição:</strong> Desenvolvi uma interface em Python utilizando PyQt5, que permite ao usuário interagir de maneira natural com uma IA. A interface pode executar comandos no terminal, manipular arquivos, e ainda salva o histórico das conversas para consultas futuras.</p>
+        <p><strong>Tecnologias:</strong> Python, PyQt5</p>
+      </div>
     </div>
+  </div>
 
+  <div class="spacer"></div>
+
+  <!-- Seção Contatos -->
+  <div class="section">
     <div class="box">
-        <h2>Contatos</h2>
-        <p>Discord: Golden4484</p>
-        <p>Telegram: Golden4484</p>
+      <h3>Contatos</h3>
+      <p>Discord: Golden4484</p>
+      <p>Telegram: Golden4484</p>
     </div>
-</div>
-
-<footer>
-    <p>&copy;  Golden4484. Todos os direitos reservados.</p>
-</footer>
+  </div>
 
 </body>
-</html>
+        </html>
