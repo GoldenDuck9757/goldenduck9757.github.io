@@ -23,25 +23,27 @@
       background-color: #003366;
       color: white;
       text-align: center;
-      padding: 100px 0;
+      padding: 80px 0 40px 0; /* Aumentei um pouco a altura */
       position: relative;
     }
 
     .header h1 {
-      font-size: 4em;
+      font-size: 4em; /* Aumentei o tamanho da fonte */
       display: inline-block;
       font-family: 'Courier New', Courier, monospace;
       color: white;
     }
 
+    .header h1 span {
+      display: inline-block;
+    }
+
     /* Linha de separação irregular */
     .divider {
-      border-top: 2px solid white;
+      height: 5px;
+      background: linear-gradient(to right, transparent, #fff 20%, transparent 40%, #fff 60%, transparent 80%, #fff);
       margin-top: 20px;
       margin-bottom: 20px;
-      border-radius: 8px;
-      background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%);
-      height: 2px;
     }
 
     /* Seção preto */
@@ -63,11 +65,11 @@
 
     /* Quadrado cinza */
     .box {
-      background-color: #444;
+      background-color: #555;
       padding: 20px;
       border-radius: 8px;
       margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .box p {
@@ -75,13 +77,13 @@
       color: #ccc;
     }
 
+    /* Títulos em cada box */
     .box h3 {
       font-size: 2em;
       margin-bottom: 10px;
       color: #fff;
     }
 
-    /* Projetos em Destaque */
     .projects .project {
       margin-bottom: 15px;
       padding: 10px;
@@ -92,51 +94,25 @@
       border-bottom: none;
     }
 
-    .highlight {
-      color: #333;
-    }
-
-    .rotate {
-      display: inline-block;
-      animation: rotateText 4s infinite linear;
-    }
-
-    @keyframes rotateText {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
+    /* Espacinho entre seções */
     .spacer {
       height: 30px;
     }
 
-    /* Contatos - links */
-    a {
-      color: #4db8ff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
   <!-- Seção Inicial -->
   <div class="header">
-    <h1>Golden4484</h1>
+    <h1><span>G</span><span>o</span><span>l</span><span>d</span><span>e</span><span>n</span><span>4</span><span>4</span><span>8</span><span>4</span></h1>
     <div class="divider"></div>
   </div>
 
   <!-- Seção Sobre Mim -->
   <div class="section">
-    <div class="box" style="background-color: #444;">
+    <div class="box">
       <h3>Sobre Mim</h3>
-      <p>Olá, sou <span class="highlight">Golden4484</span>. Desenvolvedor com experiência em <span class="highlight">Python</span>, <span class="highlight">Java</span>, <span class="highlight">HTML</span> e crio e desenvolvo Inteligências Artificiais. Meus pronomes são ele/dele. Gosto de programar coisas bem malucas e até mesmo sem nexo, ou por pura curiosidade ou por diversão...</p>
+      <p>Olá, sou Golden4484. Desenvolvedor com experiência em Python, Java, HTML e crio e desenvolvo Inteligências Artificiais. Meus pronomes são ele/dele. Gosto de programar coisas bem malucas e até mesmo sem nexo, ou por pura curiosidade ou por diversão...</p>
     </div>
   </div>
 
@@ -144,7 +120,7 @@
 
   <!-- Seção Tecnologias e Especialidades -->
   <div class="section">
-    <div class="box" style="background-color: #555;">
+    <div class="box">
       <h3>Tecnologias e Especialidades</h3>
       <p><strong>Python:</strong> Criação de scripts, automação de tarefas e desenvolvimento de IAs.</p>
       <p><strong>Java:</strong> Desenvolvimento de aplicações robustas e escaláveis.</p>
@@ -157,7 +133,7 @@
 
   <!-- Seção Projetos em Destaque -->
   <div class="section projects">
-    <div class="box" style="background-color: #666;">
+    <div class="box">
       <h3>Projetos em Destaque</h3>
       <div class="project">
         <h4>Tamagotchi com Pygame</h4>
@@ -181,11 +157,10 @@
 
   <!-- Seção Contatos -->
   <div class="section">
-    <div class="box" style="background-color: #777;">
+    <div class="box">
       <h3>Contatos</h3>
-      <p><a href="https://discord.com/users/Golden4484">Discord: Golden4484</a></p>
-      <p><a href="https://t.me/Golden4484">Telegram: Golden4484</a></p>
-      <p><a href="https://github.com/GoldenDuck9757" target="_blank">GitHub: GoldenDuck9757</a></p>
+      <p>Discord: Golden4484</p>
+      <p>Telegram: Golden4484</p>
     </div>
   </div>
 
