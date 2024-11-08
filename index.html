@@ -14,7 +14,7 @@
     body {
       font-family: 'Arial', sans-serif;
       background-color: #111;
-      color: white;
+      color: #ccc; /* Texto mais claro para melhorar contraste */
       line-height: 1.6;
     }
 
@@ -25,6 +25,8 @@
       text-align: center;
       padding: 80px 0 40px 0; /* Aumentei um pouco a altura */
       position: relative;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
     }
 
     .header h1 {
@@ -38,19 +40,12 @@
       display: inline-block;
     }
 
-    /* Linha de separação irregular */
-    .divider {
-      height: 5px;
-      background: linear-gradient(to right, transparent, #fff 20%, transparent 40%, #fff 60%, transparent 80%, #fff);
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-
     /* Seção preto */
     .section {
       background-color: #222;
-      padding: 30px;
-      margin-top: 20px;
+      padding: 20px; /* Distância menor entre os blocos */
+      margin-top: 15px; /* Diminuí o espaçamento entre seções */
+      border-radius: 10px;
     }
 
     /* Títulos das seções */
@@ -58,23 +53,22 @@
       font-size: 2.5em;
       font-weight: bold;
       margin-bottom: 15px;
-      border-bottom: 3px solid white;
       padding-bottom: 10px;
       color: #FFF;
     }
 
     /* Quadrado cinza */
     .box {
-      background-color: #555;
-      padding: 20px;
+      background-color: #444; /* Tornando a área mais dark */
+      padding: 15px; /* Diminuí a distância interna */
       border-radius: 8px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px; /* Distância entre os blocos menor */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Leve aumento na sombra */
     }
 
     .box p {
       font-size: 1.1em;
-      color: #ccc;
+      color: #bbb; /* Tornando o texto mais escuro */
     }
 
     /* Títulos em cada box */
@@ -85,18 +79,27 @@
     }
 
     .projects .project {
-      margin-bottom: 15px;
+      margin-bottom: 10px; /* Distância menor entre projetos */
       padding: 10px;
-      border-bottom: 2px solid #fff;
+      border-bottom: none;
     }
 
     .projects .project:last-child {
       border-bottom: none;
     }
 
-    /* Espacinho entre seções */
     .spacer {
-      height: 30px;
+      height: 15px; /* Menor distância entre as seções */
+    }
+
+    /* Links do site */
+    a {
+      color: #00BFFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
 
   </style>
@@ -105,14 +108,13 @@
   <!-- Seção Inicial -->
   <div class="header">
     <h1><span>G</span><span>o</span><span>l</span><span>d</span><span>e</span><span>n</span><span>4</span><span>4</span><span>8</span><span>4</span></h1>
-    <div class="divider"></div>
   </div>
 
   <!-- Seção Sobre Mim -->
   <div class="section">
     <div class="box">
       <h3>Sobre Mim</h3>
-      <p>Olá, sou Golden4484. Desenvolvedor com experiência em Python, Java, HTML e crio e desenvolvo Inteligências Artificiais. Meus pronomes são ele/dele. Gosto de programar coisas bem malucas e até mesmo sem nexo, ou por pura curiosidade ou por diversão...</p>
+      <p><strong>Olá, sou Golden4484. Desenvolvedor com experiência em Python, Java, HTML e crio e desenvolvo Inteligências Artificiais.</strong> Meus pronomes são ele/dele. Gosto de programar coisas bem malucas e até mesmo sem nexo, ou por pura curiosidade ou por diversão...</p>
     </div>
   </div>
 
@@ -159,10 +161,11 @@
   <div class="section">
     <div class="box">
       <h3>Contatos</h3>
-      <p>Discord: Golden4484</p>
-      <p>Telegram: Golden4484</p>
+      <p>Discord: <a href="https://discord.com/users/Golden4484" target="_blank">Golden4484</a></p>
+      <p>Telegram: <a href="https://t.me/Golden4484" target="_blank">@Golden4484</a></p>
+      <p>GitHub: <a href="https://github.com/GoldenDuck9757" target="_blank">GoldenDuck9757</a></p>
     </div>
   </div>
 
 </body>
-</html>
+  </html>
